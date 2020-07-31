@@ -96,8 +96,7 @@ class BSTNode:
     # Print the value of every node, starting with the given node,
     # in an iterative depth first traversal
     def dft_print(self):
-        s = []
-        s.append(self)
+        s = [self]
         while len(s) > 0:
             cur = s.pop()
             print(cur.value)
